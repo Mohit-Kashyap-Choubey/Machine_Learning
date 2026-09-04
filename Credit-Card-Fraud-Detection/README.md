@@ -2,75 +2,83 @@
 
 ## 📌 Project Overview
 
-This project focuses on detecting fraudulent credit card transactions using Machine Learning techniques. The objective is to build a classification model capable of distinguishing legitimate transactions from fraudulent ones by analyzing transaction patterns and customer behavior.
+This project focuses on detecting fraudulent credit card transactions using Machine Learning. The objective is to classify transactions as legitimate or fraudulent based on transaction patterns and customer behavior.
 
-The project follows a complete machine learning workflow, including data understanding, exploratory data analysis (EDA), data preprocessing, model development, evaluation, and performance comparison.
-
----
+The project follows an end-to-end machine learning workflow, from data understanding and exploratory analysis to preprocessing, model training, evaluation, and comparison.
 
 ## 🎯 Objectives
 
-- Understand the characteristics of fraudulent transactions.
-- Perform exploratory data analysis (EDA).
-- Clean and preprocess transaction data.
-- Train and evaluate multiple machine learning models.
-- Compare model performance using suitable evaluation metrics.
-- Document the entire workflow for reproducibility.
-
----
+* Understand the characteristics of fraudulent transactions.
+* Perform exploratory data analysis (EDA).
+* Preprocess and transform transaction data.
+* Train multiple classification models.
+* Evaluate models using appropriate performance metrics.
+* Compare model performance and identify the best-performing approach.
+* Maintain a reproducible machine learning workflow.
 
 ## 🛠️ Tech Stack
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- Jupyter Notebook
-
----
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Scikit-learn
+* Jupyter Notebook
 
 ## 📂 Project Structure
 
 ```text
 Credit-Card-Fraud-Detection/
 │
-├── data/
+├── dataset/
 ├── notebooks/
-├── images/
-├── models/
-├── src/
-├── requirements.txt
 └── README.md
 ```
 
----
-
-## 📈 Workflow
+## 🔄 Workflow
 
 1. Data Understanding
 2. Exploratory Data Analysis (EDA)
 3. Data Preprocessing
-4. Feature Engineering
-5. Model Training
-6. Model Evaluation
-7. Performance Comparison
+4. Model Training
+5. Model Evaluation
+6. Model Comparison
+7. Conclusion
 
----
+## 🤖 Models
+
+The following classification models were trained and evaluated:
+
+* Logistic Regression
+* Decision Tree
+* Random Forest
 
 ## 📊 Evaluation Metrics
 
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- ROC-AUC Score
-- Confusion Matrix
+The models were evaluated using:
 
----
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* ROC-AUC
+* Confusion Matrix
+* Precision-Recall Curve
+* Threshold Analysis
 
-## 🚀 Project Status
+## 🔍 Key Findings
 
-🟡 In Progress
+* Fraudulent transactions showed strong differences in transaction ratio, transaction distance, and online ordering behavior.
+* `ratio_to_median_purchase_price` was the most influential feature for the tree-based models.
+* Decision Tree and Random Forest significantly outperformed Logistic Regression on this dataset.
+* The tree-based models achieved near-perfect performance on the test set.
 
-This project is currently under development and will be updated as each stage of the machine learning pipeline is completed.
+## ⚠️ Important Note
+
+The near-perfect model performance is specific to this dataset and should not be interpreted as representative of real-world credit card fraud detection. The dataset contains strong patterns separating fraudulent and legitimate transactions, which may not exist in real-world financial data.
+
+## ✅ Project Status
+
+**Complete**
+
+The project covers the complete workflow from data exploration and preprocessing to model training, evaluation, comparison, and final conclusions.
